@@ -1,9 +1,13 @@
 package com.example.RegisterLogin.Service;
 
-import com.example.RegisterLogin.Dto.EmployeeDTO;
+import com.example.RegisterLogin.Dto.*;
+import com.example.RegisterLogin.response.*;
 
+import org.springframework.stereotype.*;
+
+@Service
 public interface EmployeeService
 {
 
-	String addEmployee(EmployeeDTO employeeDTO);
+	EmployeeDTO addEmployee(SignupDTO signupDTO);
 }

@@ -5,14 +5,12 @@ public class EmployeeDTO
 	private int employeeid;
 	private String employeename;
 	private String email;
-	private String password;
 	public EmployeeDTO() {
 	}
-	public EmployeeDTO(int employeeid, String employeename, String email, String password) {
+	public EmployeeDTO(int employeeid, String employeename, String email) {
 		this.employeeid = employeeid;
 		this.employeename = employeename;
 		this.email = email;
-		this.password = password;
 	}
 
 	public int getEmployeeid()
@@ -45,20 +43,10 @@ public class EmployeeDTO
 		this.email = email;
 	}
 
-	public String getPassword()
-	{
-		return password;
-	}
-
-	public void setPassword(final String password)
-	{
-		this.password = password;
-	}
-
 	@Override
 	public String toString()
 	{
 		return "EmployeeDTO{" + "employeeid=" + employeeid + ", employeename='" + employeename + '\'' + ", email='"
-				+ email + '\'' + ", password='" + password + '\'' + '}';
+				+ email + '\'' + '}';
 	}
 }

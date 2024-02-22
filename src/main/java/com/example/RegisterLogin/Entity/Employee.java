@@ -10,7 +10,7 @@ public class Employee
 	@Id
 	@Column(name = "employee_id",
 			length = 45)
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int employeeid;
 
 	@Column(name = "employee_name",
